@@ -15,37 +15,36 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Hello Flutter',
-      theme: ThemeData(primarySwatch: Colors.lime),
-      home: Scaffold(
-        appBar: AppBar(
-          title: const Text('Hello Flutter World'),
-        ),
-        body: Center(
-          child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: <Widget>[
-                ElevatedButton(
-                    onPressed: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                            builder: (context) => const FirstPage()),
-                      );
-                    },
-                    child: const Text('Stateless Widget')),
-                ElevatedButton(
-                    onPressed: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                            builder: (context) => const SecondPage()),
-                      );
-                    },
-                    child: const Text('Stateful Widget'))
-              ]),
+        title: 'Hello Flutter',
+        theme: ThemeData(primarySwatch: Colors.lime),
+        home: Scaffold(
+          appBar: AppBar(
+            title: const Text('Hello Flutter World'),
           ),
-        )
-    );
+          body: Center(
+            child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: <Widget>[
+                  ElevatedButton(
+                      onPressed: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => const FirstPage()),
+                        );
+                      },
+                      child: const Text('Stateless Widget')),
+                  ElevatedButton(
+                      onPressed: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => const SecondPage()),
+                        );
+                      },
+                      child: const Text('Stateful Widget'))
+                ]),
+          ),
+        ));
   }
 }
