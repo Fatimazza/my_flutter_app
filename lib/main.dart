@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(const MaterialApp(
+    title: 'My App with Navigation',
+    home: MyApp(),
+  ));
 }
 
 class MyApp extends StatelessWidget {
@@ -16,10 +19,15 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(
           title: const Text('Hello Flutter World'),
         ),
-        body: const Center(
-          child: BiggerText(
-            text: 'Hello, bigger world!'
-          ),
+        body: Center(
+          child: ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const FirstPage()),
+                );
+              },
+              child: const Text('Stateless Widget')),
         ),
       ),
     );
