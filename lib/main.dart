@@ -28,8 +28,13 @@ class MyApp extends StatelessWidget {
 
 class BiggerText extends StatefulWidget {
   @override
-  State<StatefulWidget> createState() {
-    // TODO: implement createState
+  _BiggerTextState createState() => _BiggerTextState();
+}
+
+class _BiggerTextState extends State<BiggerText> {
+  @override
+  Widget build(BuildContext context) {
+    // TODO: implement build
     throw UnimplementedError();
   }
 }
