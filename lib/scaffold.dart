@@ -26,6 +26,10 @@ class ScaffoldPage extends StatelessWidget {
       body: const Center(
         child: Text('Hello, Scaffold!'),
       ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {},
+        child: const Icon(Icons.add),
+      ),
     );
   }
 }
