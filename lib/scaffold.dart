@@ -23,6 +23,9 @@ class ScaffoldPage extends StatelessWidget {
               color: Colors.white,
             )),
       ),
+      body: const Center(
+        child: Text('Hello, Scaffold!'),
+      ),
     );
   }
 }
