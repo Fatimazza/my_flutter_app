@@ -21,16 +21,30 @@ class MyApp extends StatelessWidget {
           title: const Text('Hello Flutter World'),
         ),
         body: Center(
-          child: ElevatedButton(
-              onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => const FirstPage()),
-                );
-              },
-              child: const Text('Stateless Widget')),
-        ),
-      ),
+          child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: <Widget>[
+                ElevatedButton(
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => const FirstPage()),
+                      );
+                    },
+                    child: const Text('Stateless Widget')),
+                ElevatedButton(
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => const SecondPage()),
+                      );
+                    },
+                    child: const Text('Stateful Widget'))
+              ]),
+          ),
+        )
     );
   }
 }
