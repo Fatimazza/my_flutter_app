@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -12,9 +14,9 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(primarySwatch: Colors.lime),
       home: Scaffold(
         appBar: AppBar(
-          title: Text('Hello Flutter World'),
+          title: const Text('Hello Flutter World'),
         ),
-        body: Center(
+        body: const Center(
           child: Heading(
             textHeading: 'Hello, world!'
           ),
