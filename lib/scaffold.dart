@@ -8,6 +8,14 @@ class ScaffoldPage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Scaffold'),
+        actions: <Widget>[
+          IconButton(
+              onPressed: () {},
+              icon: const Icon(
+                Icons.search,
+                color: Colors.white,
+              ))
+        ],
       ),
     );
   }
