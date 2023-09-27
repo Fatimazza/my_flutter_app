@@ -21,3 +21,13 @@ class MyApp extends StatelessWidget {
     );
   }
 }
+
+class Heading extends StatelessWidget {
+  const Heading({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    // TODO: implement build
+    throw UnimplementedError();
+  }
+}
