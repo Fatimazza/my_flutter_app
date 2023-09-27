@@ -7,7 +7,17 @@ void main() {
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
-    throw UnimplementedError();
+    return MaterialApp(
+      title: 'Hello Flutter',
+      theme: ThemeData(primarySwatch: Colors.lime),
+      home: Scaffold(
+        appBar: AppBar(
+          title: Text('Hello Flutter World'),
+        ),
+        body: Center(
+          child: Text('Hello, world!'),
+        ),
+      ),
+    );
   }
 }
