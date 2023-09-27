@@ -42,7 +42,15 @@ class _BiggerTextState extends State<BiggerText> {
     return Column(
       mainAxisAlignment: MainAxisAlignment.center,
       children: <Widget>[
-        Text(widget.text, style: TextStyle(fontSize: _textSize))
+        Text(widget.text, style: TextStyle(fontSize: _textSize)),
+        ElevatedButton(
+          child: const Text("Bigger+"),
+          onPressed: () {
+            setState(() {
+              _textSize = 32.0;
+            });
+          },
+        )
       ],
     );
   }
