@@ -11,6 +11,8 @@ class ContainerPage extends StatelessWidget {
         color: Colors.amberAccent,
         width: 200,
         height: 100,
+        padding: const EdgeInsets.all(5),
+        margin: const EdgeInsets.all(10),
         child: const Text(
           'Hello, container!',
           style: TextStyle(fontSize: 40),
