@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:my_flutter_app/container.dart';
 import 'stateless_widget.dart';
 import 'stateful_widget.dart';
 import 'scaffold.dart';
@@ -52,7 +53,16 @@ class MyApp extends StatelessWidget {
                               builder: (context) => const ScaffoldPage()),
                         );
                       },
-                      child: const Text('Scaffold'))
+                      child: const Text('Scaffold')),
+                  ElevatedButton(
+                      onPressed: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => const ContainerPage()),
+                        );
+                      },
+                      child: const Text('Container'))
                 ]),
           ),
         ));
