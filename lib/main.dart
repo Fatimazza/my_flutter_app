@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'stateless_widget.dart';
 import 'stateful_widget.dart';
+import 'scaffold.dart';
 
 void main() {
   runApp(const MaterialApp(
@@ -42,7 +43,16 @@ class MyApp extends StatelessWidget {
                               builder: (context) => const SecondPage()),
                         );
                       },
-                      child: const Text('Stateful Widget'))
+                      child: const Text('Stateful Widget')),
+                  ElevatedButton(
+                      onPressed: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => const ScaffoldPage()),
+                        );
+                      },
+                      child: const Text('Scaffold'))
                 ]),
           ),
         ));
