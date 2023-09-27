@@ -35,10 +35,16 @@ class BiggerText extends StatefulWidget {
 }
 
 class _BiggerTextState extends State<BiggerText> {
+  double _textSize = 16.0;
+
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
-    throw UnimplementedError();
+    return Column(
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: <Widget>[
+        Text(widget.text, style: TextStyle(fontSize: _textSize))
+      ],
+    );
   }
 }
 
