@@ -27,6 +27,9 @@ class MyApp extends StatelessWidget {
 }
 
 class BiggerText extends StatefulWidget {
+  final String text;
+  const BiggerText({Key? key, required this.text}) : super(key: key);
+
   @override
   _BiggerTextState createState() => _BiggerTextState();
 }
