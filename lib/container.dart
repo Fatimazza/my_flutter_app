@@ -9,6 +9,8 @@ class ContainerPage extends StatelessWidget {
       appBar: AppBar(title: const Text('Container')),
       body: Container(
         color: Colors.amberAccent,
+        width: 200,
+        height: 100,
         child: const Text(
           'Hello, container!',
           style: TextStyle(fontSize: 40),
