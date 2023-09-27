@@ -26,6 +26,14 @@ class MyApp extends StatelessWidget {
   }
 }
 
+class BiggerText extends StatefulWidget {
+  @override
+  State<StatefulWidget> createState() {
+    // TODO: implement createState
+    throw UnimplementedError();
+  }
+}
+
 class Heading extends StatelessWidget {
   final String textHeading;
   const Heading({super.key, required this.textHeading});
