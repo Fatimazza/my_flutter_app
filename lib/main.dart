@@ -17,8 +17,8 @@ class MyApp extends StatelessWidget {
           title: const Text('Hello Flutter World'),
         ),
         body: const Center(
-          child: Heading(
-            textHeading: 'Hello, world!'
+          child: BiggerText(
+            text: 'Hello, bigger world!'
           ),
         ),
       ),
