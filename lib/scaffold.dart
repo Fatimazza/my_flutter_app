@@ -16,6 +16,12 @@ class ScaffoldPage extends StatelessWidget {
                 color: Colors.white,
               ))
         ],
+        leading: IconButton(
+            onPressed: () {},
+            icon: const Icon(
+              Icons.menu,
+              color: Colors.white,
+            )),
       ),
     );
   }
