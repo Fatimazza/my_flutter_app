@@ -26,6 +26,24 @@ class MyApp extends StatelessWidget {
   }
 }
 
+class FirstPage extends StatelessWidget {
+  const FirstPage({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text("Stateless Widget"),
+      ),
+      body: const Center(
+        child: Heading(
+          textHeading: 'Hello, Flutter! Stateless',
+        ),
+      ),
+    );
+  }
+}
+
 class BiggerText extends StatefulWidget {
   final String text;
   const BiggerText({Key? key, required this.text}) : super(key: key);
