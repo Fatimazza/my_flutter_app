@@ -19,6 +19,13 @@ class ContainerPage extends StatelessWidget {
               'Hello, container!',
               style: TextStyle(fontSize: 40),
             ),
+          ),
+          Container(
+            decoration: const BoxDecoration(color: Colors.purple),
+            child: const Text(
+              'Container with Decoration',
+              style: TextStyle(fontSize: 30, color: Colors.white),
+            ),
           )
         ],
       ),
