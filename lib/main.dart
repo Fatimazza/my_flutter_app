@@ -15,7 +15,9 @@ class MyApp extends StatelessWidget {
           title: Text('Hello Flutter World'),
         ),
         body: Center(
-          child: Text('Hello, world!'),
+          child: Heading(
+            textHeading: 'Hello, world!'
+          ),
         ),
       ),
     );
@@ -23,11 +25,17 @@ class MyApp extends StatelessWidget {
 }
 
 class Heading extends StatelessWidget {
-  const Heading({super.key});
+  final String textHeading;
+  const Heading({super.key, required this.textHeading});
 
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
-    throw UnimplementedError();
+    return Text(
+      textHeading,
+      style: const TextStyle(
+        fontSize: 24.0,
+        fontWeight: FontWeight.bold
+      )
+    );
   }
 }
