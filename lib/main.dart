@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:my_flutter_app/container.dart';
+import 'container.dart';
 import 'stateless_widget.dart';
 import 'stateful_widget.dart';
 import 'scaffold.dart';
