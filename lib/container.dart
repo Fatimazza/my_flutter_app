@@ -36,6 +36,17 @@ class ContainerPage extends StatelessWidget {
               'Box',
               style: TextStyle(fontSize: 50, color: Colors.white),
             ),
+          ),
+          Container(
+            margin: const EdgeInsets.all(5),
+            decoration:
+                const BoxDecoration(color: Colors.lightGreen, boxShadow: [
+              BoxShadow(color: Colors.lime, offset: Offset(3, 6), blurRadius: 5)
+            ]),
+            child: const Text(
+              'Container with Box Shadow',
+              style: TextStyle(fontSize: 25, color: Colors.white),
+            ),
           )
         ],
       ),
