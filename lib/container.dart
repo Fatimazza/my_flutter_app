@@ -21,6 +21,7 @@ class ContainerPage extends StatelessWidget {
             ),
           ),
           Container(
+            margin: const EdgeInsets.all(5),
             decoration: const BoxDecoration(color: Colors.purple),
             child: const Text(
               'Container with Decoration',
