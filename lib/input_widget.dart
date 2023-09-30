@@ -6,9 +6,9 @@ class InputWidgetPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Input Widget'),
-      ),
-    );
+        appBar: AppBar(
+          title: const Text('Input Widget'),
+        ),
+        body: Container(padding: const EdgeInsets.all(16.0), child: Column()));
   }
 }
