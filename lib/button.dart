@@ -6,8 +6,13 @@ class ButtonPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Button')
+      appBar: AppBar(title: const Text('Button')),
+      body: Container(
+        padding: const EdgeInsets.all(16.0),
+        child: Column(
+          children: <Widget>[
+          ],
+        ),
       ),
     );
   }
