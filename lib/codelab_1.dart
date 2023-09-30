@@ -16,6 +16,15 @@ class Codelab1Page extends StatelessWidget {
                 'Farm House Lembang',
                 textAlign: TextAlign.center,
                 style: TextStyle(fontSize: 30.0, fontWeight: FontWeight.bold),
+              )),
+          Container(
+              margin: const EdgeInsets.symmetric(vertical: 16.0),
+              child: const Row(
+                children: <Widget>[
+                  Icon(Icons.calendar_today),
+                  Icon(Icons.calendar_today),
+                  Icon(Icons.calendar_today)
+                ],
               ))
         ],
       ),
