@@ -23,6 +23,12 @@ class ButtonPage extends StatelessWidget {
                 // action when text button clicked
               },
             ),
+            OutlinedButton(
+              child: const Text('Outlined Button'),
+              onPressed: () {
+                // action when outlined button clicked
+              },
+            ),
           ],
         ),
       ),
