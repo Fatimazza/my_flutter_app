@@ -3,6 +3,7 @@ import 'container.dart';
 import 'stateless_widget.dart';
 import 'stateful_widget.dart';
 import 'scaffold.dart';
+import 'row_column.dart';
 
 void main() {
   runApp(const MaterialApp(
@@ -62,7 +63,16 @@ class MyApp extends StatelessWidget {
                               builder: (context) => const ContainerPage()),
                         );
                       },
-                      child: const Text('Container'))
+                      child: const Text('Container')),
+                  ElevatedButton(
+                      onPressed: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => const RowColumnPage()),
+                        );
+                      },
+                      child: const Text('Row and Column'))
                 ]),
           ),
         ));
