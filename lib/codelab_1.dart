@@ -11,7 +11,11 @@ class Codelab1Page extends StatelessWidget {
         children: <Widget>[
           Container(
               margin: const EdgeInsets.only(top: 16.0),
-              child: const Text('Farm House Lembang'))
+              child: const Text(
+                'Farm House Lembang',
+                textAlign: TextAlign.center,
+                style: TextStyle(fontSize: 30.0, fontWeight: FontWeight.bold),
+              ))
         ],
       ),
     ));
