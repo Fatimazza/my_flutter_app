@@ -21,7 +21,13 @@ class Codelab1Page extends StatelessWidget {
               margin: const EdgeInsets.symmetric(vertical: 16.0),
               child: const Row(
                 children: <Widget>[
-                  Icon(Icons.calendar_today),
+                  Column(
+                    children: <Widget> [
+                      Icon(Icons.calendar_today),
+                      SizedBox(height: 8.0),
+                      Text('Open Everyday')
+                    ],
+                  ),
                   Icon(Icons.calendar_today),
                   Icon(Icons.calendar_today)
                 ],
