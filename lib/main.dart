@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'button.dart';
+import 'input_widget.dart';
 import 'container.dart';
 import 'stateless_widget.dart';
 import 'stateful_widget.dart';
@@ -93,7 +94,16 @@ class MyApp extends StatelessWidget {
                               builder: (context) => const ButtonPage()),
                         );
                       },
-                      child: const Text('Button'))
+                      child: const Text('Button')),
+                  ElevatedButton(
+                      onPressed: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => const InputWidgetPage()),
+                        );
+                      },
+                      child: const Text('Input Widget'))
                 ]),
           ),
         ));
