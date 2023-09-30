@@ -4,6 +4,7 @@ import 'stateless_widget.dart';
 import 'stateful_widget.dart';
 import 'scaffold.dart';
 import 'row_column.dart';
+import 'codelab_1.dart';
 
 void main() {
   runApp(const MaterialApp(
@@ -72,7 +73,16 @@ class MyApp extends StatelessWidget {
                               builder: (context) => const RowColumnPage()),
                         );
                       },
-                      child: const Text('Row and Column'))
+                      child: const Text('Row and Column')),
+                  ElevatedButton(
+                      onPressed: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => const Codelab1Page()),
+                        );
+                      },
+                      child: const Text('Codelab 1'))
                 ]),
           ),
         ));
