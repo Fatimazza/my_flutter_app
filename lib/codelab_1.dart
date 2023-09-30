@@ -5,7 +5,12 @@ class Codelab1Page extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
-    throw UnimplementedError();
+    return const Scaffold(
+      body: Column(
+        children: <Widget> [
+          Text('Farm House Lembang')
+        ],
+      ),
+    );
   }
 }
