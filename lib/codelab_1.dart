@@ -5,10 +5,13 @@ class Codelab1Page extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
+    return Scaffold(
       body: Column(
-        children: <Widget> [
-          Text('Farm House Lembang')
+        children: <Widget>[
+          Container(
+              margin: const EdgeInsets.only(top: 16.0),
+              child: const Text('Farm House Lembang')
+          )
         ],
       ),
     );
