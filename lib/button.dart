@@ -11,6 +11,12 @@ class ButtonPage extends StatelessWidget {
         padding: const EdgeInsets.all(16.0),
         child: Column(
           children: <Widget>[
+            ElevatedButton(
+              child: const Text('Elevated Button'),
+              onPressed: () {
+                // action when elevated button clicked
+              },
+            )
           ],
         ),
       ),
