@@ -44,7 +44,15 @@ class Codelab1Page extends StatelessWidget {
                     ],
                   )
                 ],
-              ))
+              )),
+          Container(
+            padding: const EdgeInsets.all(16.0),
+            child: const Text(
+              'Berada di jalur utama Bandung-Lembang, Farm House menjadi objek wisata yang tidak pernah sepi pengunjung. Selain karena letaknya strategis, kawasan ini juga menghadirkan nuansa wisata khas Eropa. Semua itu diterapkan dalam bentuk spot swafoto Instagramable.',
+              textAlign: TextAlign.center,
+              style: TextStyle(fontSize: 16.0),
+            )
+          )
         ],
       ),
     ));
