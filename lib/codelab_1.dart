@@ -20,6 +20,7 @@ class Codelab1Page extends StatelessWidget {
           Container(
               margin: const EdgeInsets.symmetric(vertical: 16.0),
               child: const Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: <Widget>[
                   Column(
                     children: <Widget>[
