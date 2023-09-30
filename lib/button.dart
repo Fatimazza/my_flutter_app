@@ -29,6 +29,13 @@ class ButtonPage extends StatelessWidget {
                 // action when outlined button clicked
               },
             ),
+            IconButton(
+              icon: const Icon(Icons.volume_up),
+              tooltip: 'Increase volume by 10',
+              onPressed: () {
+                // action when icon button clicked
+              },
+            ),
           ],
         ),
       ),
