@@ -13,6 +13,14 @@ class RowColumnPage extends StatelessWidget {
               'This is first Column',
               style: TextStyle(fontSize: 32, fontWeight: FontWeight.bold),
             ),
+            Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: <Widget>[
+                  Icon(Icons.share),
+                  Icon(Icons.thumb_up),
+                  Icon(Icons.thumb_down),
+                ]
+            )
           ],
         ));
   }
