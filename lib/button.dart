@@ -52,10 +52,31 @@ class DropDownButton extends StatefulWidget {
 }
 
 class DropDownState extends State<DropDownButton> {
+  String? language;
+
   @override
   Widget build(BuildContext context) {
     return DropdownButton<String>(
-        items: const <DropdownMenuItem<String>>[],
-        onChanged: (String? value) {});
+        items: const <DropdownMenuItem<String>>[
+          DropdownMenuItem<String>(
+            value: 'Dart',
+            child: Text('Dart'),
+          ),
+          DropdownMenuItem<String>(
+            value: 'Kotlin',
+            child: Text('Kotlin'),
+          ),
+          DropdownMenuItem<String>(
+            value: 'Swift',
+            child: Text('Swift'),
+          )
+        ],
+        value: language,
+        hint: const Text('Select Language'),
+        onChanged: (String? value) {
+          setState(() {
+            language = value;
+          });
+        });
   }
 }
