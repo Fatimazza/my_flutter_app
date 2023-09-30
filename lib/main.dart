@@ -26,9 +26,10 @@ class MyApp extends StatelessWidget {
           appBar: AppBar(
             title: const Text('Hello Flutter World'),
           ),
-          body: Center(
+          body: Container(
+            padding: const EdgeInsets.all(16.0),
             child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: <Widget>[
                   ElevatedButton(
                       onPressed: () {
