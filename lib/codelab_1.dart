@@ -22,14 +22,26 @@ class Codelab1Page extends StatelessWidget {
               child: const Row(
                 children: <Widget>[
                   Column(
-                    children: <Widget> [
+                    children: <Widget>[
                       Icon(Icons.calendar_today),
                       SizedBox(height: 8.0),
                       Text('Open Everyday')
                     ],
                   ),
-                  Icon(Icons.calendar_today),
-                  Icon(Icons.calendar_today)
+                  Column(
+                    children: <Widget>[
+                      Icon(Icons.watch_later_outlined),
+                      SizedBox(height: 8.0),
+                      Text('09.00 - 20.00')
+                    ],
+                  ),
+                  Column(
+                    children: <Widget>[
+                      Icon(Icons.monetization_on),
+                      SizedBox(height: 8.0),
+                      Text('Rp 25.000')
+                    ],
+                  )
                 ],
               ))
         ],
