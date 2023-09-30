@@ -16,7 +16,13 @@ class ButtonPage extends StatelessWidget {
               onPressed: () {
                 // action when elevated button clicked
               },
-            )
+            ),
+            TextButton(
+              child: const Text('Text Button'),
+              onPressed: () {
+                // action when text button clicked
+              },
+            ),
           ],
         ),
       ),
