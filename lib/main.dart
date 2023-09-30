@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:my_flutter_app/button.dart';
 import 'container.dart';
 import 'stateless_widget.dart';
 import 'stateful_widget.dart';
@@ -82,7 +83,16 @@ class MyApp extends StatelessWidget {
                               builder: (context) => const Codelab1Page()),
                         );
                       },
-                      child: const Text('Codelab 1'))
+                      child: const Text('Codelab 1')),
+                  ElevatedButton(
+                      onPressed: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => const ButtonPage()),
+                        );
+                      },
+                      child: const Text('Button'))
                 ]),
           ),
         ));
