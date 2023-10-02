@@ -9,22 +9,38 @@ class InputWidgetPage extends StatelessWidget {
         appBar: AppBar(
           title: const Text('Input Widget'),
         ),
-        body: Container(padding: const EdgeInsets.all(16.0), child: Column()));
+        body: Container(padding: const EdgeInsets.all(16.0), child: const Column(
+          children: <Widget> [
+            EditText1()
+          ],
+        )));
   }
 }
 
 class EditText1 extends StatefulWidget {
+  const EditText1({super.key});
+
   @override
-  State<StatefulWidget> createState() {
-    // TODO: implement createState
-    throw UnimplementedError();
-  }
+  _EditTextState createState() => _EditTextState();
 }
 
 class _EditTextState extends State<EditText1> {
+  String _name = '';
+
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
-    throw UnimplementedError();
+    return Column(
+      children: [
+        TextField(
+          decoration: const InputDecoration(
+              hintText: 'Write your name...', labelText: 'Your Name'),
+          onChanged: (String value) {
+            setState(() {
+              _name = value;
+            });
+          },
+        )
+      ],
+    );
   }
 }
