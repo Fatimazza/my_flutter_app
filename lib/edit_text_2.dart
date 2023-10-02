@@ -8,10 +8,18 @@ class EditText2 extends StatefulWidget {
 }
 
 class _EditText2State extends State<EditText2> {
+  TextEditingController _controller = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
-    throw UnimplementedError();
+    return Column(children: [
+      TextField(
+          controller: _controller,
+          decoration: const InputDecoration(
+            hintText: 'Write your phone...',
+            labelText: 'Your Phone',
+          ),
+          keyboardType: TextInputType.number)
+    ]);
   }
 }
