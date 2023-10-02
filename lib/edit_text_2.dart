@@ -19,7 +19,20 @@ class _EditText2State extends State<EditText2> {
             hintText: 'Write your phone...',
             labelText: 'Your Phone',
           ),
-          keyboardType: TextInputType.number)
+          keyboardType: TextInputType.number),
+      const SizedBox(height: 10),
+      ElevatedButton(
+        child: const Text('Submit'),
+        onPressed: () {
+          showDialog(
+              context: context,
+              builder: (context) {
+                return AlertDialog(
+                  content: Text('Hello, ${_controller.text}'),
+                );
+              });
+        },
+      )
     ]);
   }
 }
