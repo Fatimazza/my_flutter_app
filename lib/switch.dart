@@ -8,10 +8,27 @@ class SwitchPage extends StatefulWidget {
 }
 
 class _SwitchPageState extends State<SwitchPage> {
-
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
-    throw UnimplementedError();
+    bool lightOn = false;
+
+    return Column(
+      children: <Widget>[
+        const SizedBox(height: 20),
+        Switch(
+            value: lightOn,
+            onChanged: (bool value) {
+              setState(() {
+                lightOn = value;
+              });
+              ScaffoldMessenger.of(context).showSnackBar(
+                SnackBar(
+                  content: Text(lightOn ? 'Light On' : 'Light Off'),
+                  duration: const Duration(seconds: 1),
+                ),
+              );
+            })
+      ],
+    );
   }
 }
