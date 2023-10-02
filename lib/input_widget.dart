@@ -9,11 +9,11 @@ class InputWidgetPage extends StatelessWidget {
         appBar: AppBar(
           title: const Text('Input Widget'),
         ),
-        body: Container(padding: const EdgeInsets.all(16.0), child: const Column(
-          children: <Widget> [
-            EditText1()
-          ],
-        )));
+        body: Container(
+            padding: const EdgeInsets.all(16.0),
+            child: const Column(
+              children: <Widget>[EditText1()],
+            )));
   }
 }
 
@@ -38,6 +38,18 @@ class _EditTextState extends State<EditText1> {
             setState(() {
               _name = value;
             });
+          },
+        ),
+        ElevatedButton(
+          child: const Text('Submit'),
+          onPressed: () {
+            showDialog(
+                context: context,
+                builder: (context) {
+                  return AlertDialog(
+                    content: Text('Hello, $_name'),
+                  );
+                });
           },
         )
       ],
