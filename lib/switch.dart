@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class Switch extends StatefulWidget {
-  const Switch({super.key});
+class SwitchPage extends StatefulWidget {
+  const SwitchPage({super.key});
 
   @override
-  State<StatefulWidget> createState() => _SwitchState();
+  State<StatefulWidget> createState() => _SwitchPageState();
 }
 
-class _SwitchState extends State<Switch> {
+class _SwitchPageState extends State<SwitchPage> {
 
   @override
   Widget build(BuildContext context) {
