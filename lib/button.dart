@@ -48,10 +48,10 @@ class DropDownButton extends StatefulWidget {
   const DropDownButton({super.key});
 
   @override
-  DropDownState createState() => DropDownState();
+  _DropDownButtonState createState() => _DropDownButtonState();
 }
 
-class DropDownState extends State<DropDownButton> {
+class _DropDownButtonState extends State<DropDownButton> {
   String? language;
 
   @override
