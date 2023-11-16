@@ -5,7 +5,8 @@ class ImageAssetPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
-    throw UnimplementedError();
+    return Center(
+      child: Image.asset('images/android.png', width: 200, height: 200),
+    );
   }
 }

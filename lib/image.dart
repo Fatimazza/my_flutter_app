@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:my_flutter_app/image_asset.dart';
 import 'package:my_flutter_app/image_network.dart';
 
 class ImagePage extends StatelessWidget {
@@ -14,7 +15,9 @@ class ImagePage extends StatelessWidget {
             padding: const EdgeInsets.all(16.0),
             child: const Column(
               children: <Widget>[
-                ImageNetworkPage()
+                ImageNetworkPage(),
+                Spacer(),
+                ImageAssetPage()
               ],
             )));
   }
