@@ -8,9 +8,23 @@ class RadioPage extends StatefulWidget {
 }
 
 class _RadioState extends State<RadioPage> {
+  String? language;
+
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
-    throw UnimplementedError();
+    return Column(mainAxisSize: MainAxisSize.min, children: <Widget>[
+      ListTile(
+        leading: Radio<String>(
+          value: 'Dart',
+          groupValue: language,
+          onChanged: (String? value) {
+            setState(() {
+              language = value;
+            });
+          },
+        ),
+        title: Text('Dart'),
+      ),
+    ]);
   }
 }

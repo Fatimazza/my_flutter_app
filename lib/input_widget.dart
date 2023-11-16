@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'edit_text.dart';
 import 'edit_text_2.dart';
 import 'switch.dart';
+import 'radio.dart';
 
 class InputWidgetPage extends StatelessWidget {
   const InputWidgetPage({super.key});
@@ -15,7 +16,12 @@ class InputWidgetPage extends StatelessWidget {
         body: Container(
             padding: const EdgeInsets.all(16.0),
             child: const Column(
-              children: <Widget>[EditText1(), EditText2(), SwitchPage()],
+              children: <Widget>[
+                EditText1(),
+                EditText2(),
+                SwitchPage(),
+                RadioPage()
+              ],
             )));
   }
 }
