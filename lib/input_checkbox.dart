@@ -12,7 +12,18 @@ class _CheckboxPageState extends State<CheckboxPage> {
 
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
-    throw UnimplementedError();
+    return Column(mainAxisSize: MainAxisSize.min, children: <Widget>[
+      ListTile(
+        leading: Checkbox(
+          value: agree,
+          onChanged: (bool? value) {
+            setState(() {
+              agree = value!;
+            });
+          },
+        ),
+        title: Text('Agree / Disagree'),
+      )
+    ],);
   }
 }

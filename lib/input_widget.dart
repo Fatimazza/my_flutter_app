@@ -3,6 +3,7 @@ import 'input_edit_text.dart';
 import 'input_edit_text2.dart';
 import 'input_switch.dart';
 import 'input_radio.dart';
+import 'input_checkbox.dart';
 
 class InputWidgetPage extends StatelessWidget {
   const InputWidgetPage({super.key});
@@ -20,7 +21,8 @@ class InputWidgetPage extends StatelessWidget {
                 EditText1(),
                 EditText2(),
                 SwitchPage(),
-                RadioPage()
+                RadioPage(),
+                CheckboxPage()
               ],
             )));
   }
