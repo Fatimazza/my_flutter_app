@@ -24,7 +24,10 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
         title: 'Hello Flutter',
-        theme: ThemeData(primarySwatch: Colors.lime),
+        theme: ThemeData(
+            fontFamily: 'Oswald',
+            primarySwatch: Colors.lime
+        ),
         home: Scaffold(
           appBar: AppBar(
             title: const Text('Hello Flutter World'),
