@@ -8,10 +8,10 @@ class SwitchPage extends StatefulWidget {
 }
 
 class _SwitchPageState extends State<SwitchPage> {
+  bool lightOn = false;
+  
   @override
   Widget build(BuildContext context) {
-    bool lightOn = false;
-
     return Column(
       children: <Widget>[
         const SizedBox(height: 20),
