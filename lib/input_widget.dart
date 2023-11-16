@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'input_edit_text.dart';
 import 'input_edit_text2.dart';
-import 'switch.dart';
+import 'input_switch.dart';
 import 'radio.dart';
 
 class InputWidgetPage extends StatelessWidget {
