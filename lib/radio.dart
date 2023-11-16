@@ -25,6 +25,30 @@ class _RadioState extends State<RadioPage> {
         ),
         title: Text('Dart'),
       ),
+      ListTile(
+        leading: Radio<String>(
+          value: 'Kotlin',
+          groupValue: language,
+          onChanged: (String? value) {
+            setState(() {
+              language = value;
+            });
+          },
+        ),
+        title: Text('Kotlin'),
+      ),
+      ListTile(
+        leading: Radio<String>(
+          value: 'Swift',
+          groupValue: language,
+          onChanged: (String? value) {
+            setState(() {
+              language = value;
+            });
+          },
+        ),
+        title: Text('Swift'),
+      )
     ]);
   }
 }
