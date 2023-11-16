@@ -5,7 +5,16 @@ class ImagePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
-    throw UnimplementedError();
+    return Scaffold(
+        appBar: AppBar(
+          title: const Text('Image'),
+        ),
+        body: Container(
+            padding: const EdgeInsets.all(16.0),
+            child: const Column(
+              children: <Widget>[
+
+              ],
+            )));
   }
 }
