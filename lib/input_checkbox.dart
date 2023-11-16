@@ -1,13 +1,14 @@
 import 'package:flutter/material.dart';
 
-class Checkbox extends StatefulWidget {
-  const Checkbox({super.key});
+class CheckboxPage extends StatefulWidget {
+  const CheckboxPage({super.key});
 
   @override
-  _CheckboxState createState() => _CheckboxState();
+  _CheckboxPageState createState() => _CheckboxPageState();
 }
 
-class _CheckboxState extends State<Checkbox> {
+class _CheckboxPageState extends State<CheckboxPage> {
+  bool agree = false;
 
   @override
   Widget build(BuildContext context) {
