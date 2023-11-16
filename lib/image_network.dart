@@ -5,7 +5,11 @@ class ImageNetworkPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
-    throw UnimplementedError();
+    return Center(
+        child: Image.network(
+        'https://picsum.photos/200/300',
+        width: 200,
+        height: 200,
+    ));
   }
 }
