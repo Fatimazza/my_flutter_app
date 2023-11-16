@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:my_flutter_app/image.dart';
 import 'button.dart';
 import 'input_widget.dart';
 import 'container.dart';
@@ -103,7 +104,16 @@ class MyApp extends StatelessWidget {
                               builder: (context) => const InputWidgetPage()),
                         );
                       },
-                      child: const Text('Input Widget'))
+                      child: const Text('Input Widget')),
+                  ElevatedButton(
+                      onPressed: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => const ImagePage()),
+                        );
+                      },
+                      child: const Text('Image'))
                 ]),
           ),
         ));
