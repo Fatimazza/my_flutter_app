@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'edit_text.dart';
-import 'edit_text_2.dart';
+import 'input_edit_text.dart';
+import 'input_edit_text2.dart';
 import 'switch.dart';
 import 'radio.dart';
 
