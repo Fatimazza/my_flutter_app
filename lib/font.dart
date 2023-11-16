@@ -9,6 +9,12 @@ class FontPage extends StatelessWidget {
         appBar: AppBar(
           title: const Text('Image'),
         ),
-        body: const Text('Custom Font'));
+        body: const Text(
+          'Custom Font',
+          style: TextStyle(
+            fontFamily: 'Oswald',
+            fontSize: 30
+          ),
+        ));
   }
 }
