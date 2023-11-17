@@ -55,8 +55,18 @@ class Codelab2DetailPage extends StatelessWidget {
                     textAlign: TextAlign.center,
                     style: TextStyle(fontSize: 16.0),
                   )),
-              Image.network(
-                  'https://media-cdn.tripadvisor.com/media/photo-s/0d/7c/59/70/farmhouse-lembang.jpg')
+              SizedBox(
+                  height: 150,
+                  child: ListView(
+                    children: [
+                      Image.network(
+                          'https://media-cdn.tripadvisor.com/media/photo-s/0d/7c/59/70/farmhouse-lembang.jpg'),
+                      Image.network(
+                          'https://media-cdn.tripadvisor.com/media/photo-w/13/f0/22/f6/photo3jpg.jpg'),
+                      Image.network(
+                          'https://media-cdn.tripadvisor.com/media/photo-m/1280/16/a9/33/43/liburan-di-farmhouse.jpg')
+                    ],
+                  ))
             ]),
       ),
     ));
