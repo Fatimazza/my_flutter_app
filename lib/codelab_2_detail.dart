@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class Codelab2Page extends StatelessWidget {
-  const Codelab2Page({super.key});
+class Codelab2DetailPage extends StatelessWidget {
+  const Codelab2DetailPage({super.key});
 
   @override
   Widget build(BuildContext context) {
