@@ -10,6 +10,7 @@ class Codelab2DetailPage extends StatelessWidget {
         child: Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: <Widget>[
+              Image.asset('images/wisata-farm-house.jpg'),
               Container(
                   margin: const EdgeInsets.only(top: 16.0),
                   child: const Text(
