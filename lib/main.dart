@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:my_flutter_app/codelab_2.dart';
 import 'package:my_flutter_app/font.dart';
 import 'package:my_flutter_app/image.dart';
 import 'button.dart';
@@ -126,7 +127,16 @@ class MyApp extends StatelessWidget {
                               builder: (context) => const FontPage()),
                         );
                       },
-                      child: const Text('Font'))
+                      child: const Text('Font')),
+                  ElevatedButton(
+                      onPressed: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => const Codelab2Page()),
+                        );
+                      },
+                      child: const Text('Codelab 2'))
                 ]),
           ),
         ));
