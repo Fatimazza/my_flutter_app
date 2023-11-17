@@ -53,7 +53,9 @@ class Codelab2DetailPage extends StatelessWidget {
                     textAlign: TextAlign.center,
                     style: TextStyle(fontSize: 16.0),
                   )
-              )
+              ),
+              Image.network(
+                  'https://media-cdn.tripadvisor.com/media/photo-s/0d/7c/59/70/farmhouse-lembang.jpg')
             ]
         ),
       )
