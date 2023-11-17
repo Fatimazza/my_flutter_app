@@ -91,6 +91,12 @@ flutter:
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
   fonts:
+    - family: Staatliches
+      fonts:
+      - asset: fonts/Staatliches-Regular.ttf
+    - family: Oxygen
+      fonts:
+      - asset: fonts/Oxygen-Regular.ttf
     - family: Oswald
       fonts:
         - asset: fonts/Oswald/Oswald-Regular.ttf
