@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:my_flutter_app/font.dart';
 import 'package:my_flutter_app/image.dart';
 import 'button.dart';
+import 'codelab_2.dart';
 import 'input_widget.dart';
 import 'container.dart';
 import 'stateless_widget.dart';
@@ -9,7 +10,6 @@ import 'stateful_widget.dart';
 import 'scaffold.dart';
 import 'row_column.dart';
 import 'codelab_1.dart';
-import 'codelab_2_detail.dart';
 
 void main() {
   runApp(const MaterialApp(
@@ -133,7 +133,7 @@ class MyApp extends StatelessWidget {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => const Codelab2DetailPage()),
+                              builder: (context) => const Codelab2Page()),
                         );
                       },
                       child: const Text('Codelab 2'))
