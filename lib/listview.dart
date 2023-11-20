@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:my_flutter_app/listview_dynamic.dart';
 import 'package:my_flutter_app/listview_static.dart';
 
 class ListViewPage extends StatelessWidget {
@@ -26,6 +27,16 @@ class ListViewPage extends StatelessWidget {
                             );
                           },
                           child: const Text('Static ListView')),
+                      ElevatedButton(
+                          onPressed: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) =>
+                                  const DynamicListViewPage()),
+                            );
+                          },
+                          child: const Text('Dynamic ListView')),
                     ]))));
   }
 }
