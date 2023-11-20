@@ -10,8 +10,7 @@ class ListViewPage extends StatelessWidget {
         title: 'ListView',
         theme: ThemeData(primarySwatch: Colors.lime),
         home: Scaffold(
-            appBar: AppBar(
-                title: const Text('ListView')),
+            appBar: AppBar(title: const Text('ListView')),
             body: Container(
                 padding: const EdgeInsets.all(16.0),
                 child: Column(
@@ -22,12 +21,11 @@ class ListViewPage extends StatelessWidget {
                             Navigator.push(
                               context,
                               MaterialPageRoute(
-                                  builder: (context) => const StaticListViewPage()),
+                                  builder: (context) =>
+                                      const StaticListViewPage()),
                             );
                           },
                           child: const Text('Static ListView')),
-                    ]))
-        )
-    );
+                    ]))));
   }
 }
