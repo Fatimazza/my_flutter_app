@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:my_flutter_app/listview_builder.dart';
 import 'package:my_flutter_app/listview_dynamic.dart';
+import 'package:my_flutter_app/listview_separated.dart';
 import 'package:my_flutter_app/listview_static.dart';
 
 class ListViewPage extends StatelessWidget {
@@ -48,6 +49,16 @@ class ListViewPage extends StatelessWidget {
                             );
                           },
                           child: const Text('ListView with Builder')),
+                      ElevatedButton(
+                          onPressed: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) =>
+                                      SeparatedListViewPage()),
+                            );
+                          },
+                          child: const Text('ListView with Separated')),
                     ]))));
   }
 }
