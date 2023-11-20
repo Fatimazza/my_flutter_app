@@ -44,7 +44,7 @@ class ListViewPage extends StatelessWidget {
                               context,
                               MaterialPageRoute(
                                   builder: (context) =>
-                                  const BuilderListViewPage()),
+                                  BuilderListViewPage()),
                             );
                           },
                           child: const Text('ListView with Builder')),
