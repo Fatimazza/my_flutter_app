@@ -5,7 +5,12 @@ class ListViewPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
-    throw UnimplementedError();
+    return MaterialApp(
+        title: 'ListView',
+        theme: ThemeData(primarySwatch: Colors.lime),
+        home: Scaffold(
+            appBar: AppBar(
+          title: const Text('ListView'),
+        )));
   }
 }
