@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:my_flutter_app/listview_static.dart';
 
 class ListViewPage extends StatelessWidget {
   const ListViewPage({super.key});
@@ -10,7 +11,23 @@ class ListViewPage extends StatelessWidget {
         theme: ThemeData(primarySwatch: Colors.lime),
         home: Scaffold(
             appBar: AppBar(
-          title: const Text('ListView'),
-        )));
+                title: const Text('ListView')),
+            body: Container(
+                padding: const EdgeInsets.all(16.0),
+                child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.stretch,
+                    children: <Widget>[
+                      ElevatedButton(
+                          onPressed: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => const StaticListViewPage()),
+                            );
+                          },
+                          child: const Text('Static ListView')),
+                    ]))
+        )
+    );
   }
 }
