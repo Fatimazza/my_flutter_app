@@ -10,7 +10,19 @@ class DynamicListViewPage extends StatelessWidget {
     return Scaffold(
         body: ListView(
       children: numberList.map((number) {
-        return Container();
+        return Container(
+          height: 250,
+          decoration: BoxDecoration(
+            color: Colors.grey,
+            border: Border.all(color: Colors.black),
+          ),
+          child: Center(
+            child: Text(
+              '$number', // Ditampilkan sesuai item
+              style: const TextStyle(fontSize: 50),
+            ),
+          ),
+        );
       }).toList(),
     ));
   }
