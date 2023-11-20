@@ -5,7 +5,21 @@ class StaticListViewPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
-    throw UnimplementedError();
+    return Scaffold(
+        body: ListView(children: <Widget>[
+      Container(
+        height: 250,
+        decoration: BoxDecoration(
+          color: Colors.grey,
+          border: Border.all(color: Colors.black),
+        ),
+        child: const Center(
+          child: Text(
+            '1',
+            style: TextStyle(fontSize: 50),
+          ),
+        ),
+      )
+    ]));
   }
 }
