@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+var informationTextStyle = const TextStyle(fontFamily: 'Oxygen');
+
 class Codelab2DetailPage extends StatelessWidget {
   const Codelab2DetailPage({super.key});
 
@@ -17,36 +19,41 @@ class Codelab2DetailPage extends StatelessWidget {
                   child: const Text(
                     'Farm House Lembang',
                     textAlign: TextAlign.center,
-                    style:
-                        TextStyle(
-                            fontSize: 30.0,
-                            fontFamily: 'Staatliches'
-                        ),
+                    style: TextStyle(fontSize: 30.0, fontFamily: 'Staatliches'),
                   )),
               Container(
                   margin: const EdgeInsets.symmetric(vertical: 16.0),
-                  child: const Row(
+                  child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: <Widget>[
                       Column(
                         children: <Widget>[
                           Icon(Icons.calendar_today),
                           SizedBox(height: 8.0),
-                          Text('Open Everyday')
+                          Text(
+                            'Open Everyday',
+                            style: informationTextStyle,
+                          )
                         ],
                       ),
                       Column(
                         children: <Widget>[
                           Icon(Icons.watch_later_outlined),
                           SizedBox(height: 8.0),
-                          Text('09.00 - 20.00')
+                          Text(
+                            '09.00 - 20.00',
+                            style: informationTextStyle,
+                          )
                         ],
                       ),
                       Column(
                         children: <Widget>[
                           Icon(Icons.monetization_on),
                           SizedBox(height: 8.0),
-                          Text('Rp 25.000')
+                          Text(
+                            'Rp 25.000',
+                            style: informationTextStyle,
+                          )
                         ],
                       )
                     ],
