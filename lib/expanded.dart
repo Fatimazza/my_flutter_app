@@ -17,6 +17,7 @@ class ExpandedPage extends StatelessWidget {
         ),
       ),
       Expanded(
+        flex: 2,
         child: Container(
           color: Colors.yellow,
         ),
@@ -37,6 +38,7 @@ class ExpandedPage extends StatelessWidget {
         ),
       ),
       Expanded(
+        flex: 2,
         child: Container(
           color: Colors.purple,
         ),
