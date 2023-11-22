@@ -14,6 +14,7 @@ import 'codelab_1.dart';
 import 'expanded.dart';
 import 'flexible.dart';
 import 'navigation.dart';
+import 'resp_mediaquery.dart';
 
 void main() {
   runApp(const MaterialApp(
@@ -174,7 +175,17 @@ class MyApp extends StatelessWidget {
                               builder: (context) => const FirstScreen()),
                         );
                       },
-                      child: const Text('Navigation'))
+                      child: const Text('Navigation')),
+                  ElevatedButton(
+                      onPressed: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) =>
+                                  const ResponsiveMediaQueryPage()),
+                        );
+                      },
+                      child: const Text('Responsive Layout: Media Query'))
                 ]),
           )),
         ));
