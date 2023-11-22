@@ -32,7 +32,9 @@ class SecondScreen extends StatelessWidget {
         body: Center(
             child: OutlinedButton(
           child: const Text('Kembali'),
-          onPressed: () {},
+          onPressed: () {
+            Navigator.pop(context);
+          },
         )));
   }
 }
