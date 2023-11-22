@@ -5,7 +5,12 @@ class ResponsiveLayoutBuilderPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
-    throw UnimplementedError();
+    return Scaffold(
+        backgroundColor: Colors.deepPurple,
+        body: Row(children: [
+          Expanded(
+              child: Text('Layout Builder',
+                  style: const TextStyle(color: Colors.white, fontSize: 18)))
+        ]));
   }
 }
