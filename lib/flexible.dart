@@ -8,7 +8,8 @@ class FlexiblePage extends StatelessWidget {
     return Scaffold(
         body: SafeArea(
             child: Column(children: [
-      Row(children: [ExpandedWidget(), ExpandedWidget()])
+      Row(children: [ExpandedWidget(), ExpandedWidget()]),
+      Row(children: [ExpandedWidget(), FlexibleWidget()]),
     ])));
   }
 }
