@@ -5,7 +5,11 @@ class ResponsiveMediaQueryPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
-    throw UnimplementedError();
+    return const Scaffold(
+        backgroundColor: Colors.deepPurple,
+        body: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [Text('Screen width'), Text('Orientation')],
+        ));
   }
 }
