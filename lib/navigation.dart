@@ -11,7 +11,12 @@ class FirstScreen extends StatelessWidget {
         ),
         body: Center(
             child: ElevatedButton(
-                child: const Text('Pindah Screen'), onPressed: () {})));
+                child: const Text('Pindah Screen'),
+                onPressed: () {
+                  Navigator.push(context, MaterialPageRoute(builder: (context) {
+                    return SecondScreen();
+                  }));
+                })));
   }
 }
 
