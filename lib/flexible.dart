@@ -11,6 +11,7 @@ class FlexiblePage extends StatelessWidget {
       Row(children: [ExpandedWidget(), ExpandedWidget()]),
       Row(children: [ExpandedWidget(), FlexibleWidget()]),
       Row(children: [FlexibleWidget(), FlexibleWidget()]),
+      Row(children: [FlexibleWidget(), ExpandedWidget()]),
     ])));
   }
 }
