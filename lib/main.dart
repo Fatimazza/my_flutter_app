@@ -11,6 +11,7 @@ import 'stateful_widget.dart';
 import 'scaffold.dart';
 import 'row_column.dart';
 import 'codelab_1.dart';
+import 'expanded.dart';
 
 void main() {
   runApp(const MaterialApp(
@@ -146,7 +147,16 @@ class MyApp extends StatelessWidget {
                               builder: (context) => const ListViewPage()),
                         );
                       },
-                      child: const Text('ListView'))
+                      child: const Text('ListView')),
+                  ElevatedButton(
+                      onPressed: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => const ExpandedPage()),
+                        );
+                      },
+                      child: const Text('Expanded'))
                 ]),
           ),
         ));
