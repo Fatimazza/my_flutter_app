@@ -25,3 +25,13 @@ class ExpandedWidget extends StatelessWidget {
         child: Container());
   }
 }
+
+class FlexibleWidget extends StatelessWidget {
+  const FlexibleWidget({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    // TODO: implement build
+    throw UnimplementedError();
+  } 
+}
