@@ -31,7 +31,7 @@ class FlexibleWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
-    throw UnimplementedError();
+    return Flexible(
+        child: Container());
   } 
 }
