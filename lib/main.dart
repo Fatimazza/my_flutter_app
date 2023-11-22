@@ -15,6 +15,7 @@ import 'expanded.dart';
 import 'flexible.dart';
 import 'navigation.dart';
 import 'resp_mediaquery.dart';
+import 'resp_layoutbuilder.dart';
 
 void main() {
   runApp(const MaterialApp(
@@ -185,7 +186,17 @@ class MyApp extends StatelessWidget {
                                   const ResponsiveMediaQueryPage()),
                         );
                       },
-                      child: const Text('Responsive Layout: Media Query'))
+                      child: const Text('Responsive Layout: Media Query')),
+                  ElevatedButton(
+                      onPressed: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) =>
+                              const ResponsiveLayoutBuilderPage()),
+                        );
+                      },
+                      child: const Text('Responsive Layout: Layout Builder'))
                 ]),
           )),
         ));
