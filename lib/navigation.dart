@@ -9,6 +9,8 @@ class FirstScreen extends StatelessWidget {
         appBar: AppBar(
           title: const Text('First Screen'),
         ),
-        body: Center());
+        body: Center(
+            child: ElevatedButton(
+                child: const Text('Pindah Screen'), onPressed: () {})));
   }
 }
