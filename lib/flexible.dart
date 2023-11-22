@@ -21,7 +21,7 @@ class ExpandedWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
-    throw UnimplementedError();
+    return Expanded(
+        child: Container());
   }
 }
