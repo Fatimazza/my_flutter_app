@@ -15,3 +15,13 @@ class FlexiblePage extends StatelessWidget {
     );
   }
 }
+
+class ExpandedWidget extends StatelessWidget {
+  const ExpandedWidget({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    // TODO: implement build
+    throw UnimplementedError();
+  }
+}
