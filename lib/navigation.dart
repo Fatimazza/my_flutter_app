@@ -20,7 +20,14 @@ class SecondScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
-    throw UnimplementedError();
+    return Scaffold(
+        appBar: AppBar(
+          title: const Text('Second Screen'),
+        ),
+        body: Center(
+            child: OutlinedButton(
+          child: const Text('Kembali'),
+          onPressed: () {},
+        )));
   }
 }
