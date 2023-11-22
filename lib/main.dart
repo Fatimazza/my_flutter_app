@@ -13,6 +13,7 @@ import 'row_column.dart';
 import 'codelab_1.dart';
 import 'expanded.dart';
 import 'flexible.dart';
+import 'navigation.dart';
 
 void main() {
   runApp(const MaterialApp(
@@ -166,7 +167,16 @@ class MyApp extends StatelessWidget {
                               builder: (context) => const FlexiblePage()),
                         );
                       },
-                      child: const Text('Flexible'))
+                      child: const Text('Flexible')),
+                  ElevatedButton(
+                      onPressed: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => const FirstScreen()),
+                        );
+                      },
+                      child: const Text('Navigation'))
                 ]),
           ),
         ));
