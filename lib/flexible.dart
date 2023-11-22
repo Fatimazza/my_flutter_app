@@ -39,6 +39,20 @@ class FlexibleWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Flexible(child: Container());
+    return Flexible(
+        child: Container(
+            decoration: BoxDecoration(
+              color: Colors.tealAccent,
+              border: Border.all(color: Colors.white),
+            ),
+            child: Padding(
+                padding: const EdgeInsets.all(16.0),
+                child: Text(
+                  'Flexible',
+                  style: TextStyle(
+                    color: Colors.teal,
+                    fontSize: 24,
+                  ),
+                ))));
   }
 }
