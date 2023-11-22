@@ -10,6 +10,7 @@ class FlexiblePage extends StatelessWidget {
             child: Column(children: [
       Row(children: [ExpandedWidget(), ExpandedWidget()]),
       Row(children: [ExpandedWidget(), FlexibleWidget()]),
+      Row(children: [FlexibleWidget(), FlexibleWidget()]),
     ])));
   }
 }
