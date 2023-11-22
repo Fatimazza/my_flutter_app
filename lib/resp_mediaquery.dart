@@ -5,11 +5,26 @@ class ResponsiveMediaQueryPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
+    Size screenSize = MediaQuery.of(context).size;
+    Orientation orientation = MediaQuery.of(context).orientation;
+
+    return Scaffold(
         backgroundColor: Colors.deepPurple,
         body: Column(
           mainAxisAlignment: MainAxisAlignment.center,
-          children: [Text('Screen width'), Text('Orientation')],
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: [
+            Text(
+              'Screen width: ${screenSize.width.toStringAsFixed(2)}',
+              style: const TextStyle(color: Colors.white, fontSize: 18),
+              textAlign: TextAlign.center,
+            ),
+            Text(
+              'Orientation: $orientation',
+              style: const TextStyle(color: Colors.white, fontSize: 18),
+              textAlign: TextAlign.center,
+            )
+          ],
         ));
   }
 }
