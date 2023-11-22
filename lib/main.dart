@@ -29,15 +29,13 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
         title: 'Hello Flutter',
-        theme: ThemeData(
-            fontFamily: 'Oswald',
-            primarySwatch: Colors.lime
-        ),
+        theme: ThemeData(fontFamily: 'Oswald', primarySwatch: Colors.lime),
         home: Scaffold(
           appBar: AppBar(
             title: const Text('Hello Flutter World'),
           ),
-          body: Container(
+          body: SingleChildScrollView(
+              child: Container(
             padding: const EdgeInsets.all(16.0),
             child: Column(
                 crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -178,7 +176,7 @@ class MyApp extends StatelessWidget {
                       },
                       child: const Text('Navigation'))
                 ]),
-          ),
+          )),
         ));
   }
 }
