@@ -10,6 +10,36 @@ class ExpandedPage extends StatelessWidget {
         child: Container(
           color: Colors.red,
         ),
+      ),
+      Expanded(
+        child: Container(
+          color: Colors.orange,
+        ),
+      ),
+      Expanded(
+        child: Container(
+          color: Colors.yellow,
+        ),
+      ),
+      Expanded(
+        child: Container(
+          color: Colors.green,
+        ),
+      ),
+      Expanded(
+        child: Container(
+          color: Colors.blue,
+        ),
+      ),
+      Expanded(
+        child: Container(
+          color: Colors.indigo,
+        ),
+      ),
+      Expanded(
+        child: Container(
+          color: Colors.purple,
+        ),
       )
     ]);
   }
