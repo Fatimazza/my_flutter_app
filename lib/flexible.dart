@@ -7,12 +7,9 @@ class FlexiblePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         body: SafeArea(
-            child:
-            Column(children: [
-              Row()
-            ])
-        )
-    );
+            child: Column(children: [
+      Row(children: [ExpandedWidget(), ExpandedWidget()])
+    ])));
   }
 }
 
@@ -42,7 +39,6 @@ class FlexibleWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Flexible(
-        child: Container());
-  } 
+    return Flexible(child: Container());
+  }
 }
