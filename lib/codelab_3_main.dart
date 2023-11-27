@@ -15,23 +15,25 @@ class Codelab3MainScreen extends StatelessWidget {
                 flex: 1,
                 child: Image.asset('images/wisata-farm-house.jpg'),
               ),
-              Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  mainAxisSize: MainAxisSize.min,
-                  children: <Widget>[
-                    Text(
-                      'Farm House Lembang',
-                      style: const TextStyle(fontSize: 16.0),
+              Expanded(
+                  flex: 2,
+                  child: Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      mainAxisSize: MainAxisSize.min,
+                      children: <Widget>[
+                        Text(
+                          'Farm House Lembang',
+                          style: const TextStyle(fontSize: 16.0),
+                        ),
+                        const SizedBox(
+                          height: 10,
+                        ),
+                        Text('Lembang'),
+                      ],
                     ),
-                    const SizedBox(
-                      height: 10,
-                    ),
-                    Text('Lembang'),
-                  ],
-                ),
-              )
+                  ))
             ])));
   }
 }
