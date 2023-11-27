@@ -8,9 +8,10 @@ class ResponsiveLayoutBuilderPage extends StatelessWidget {
     return Scaffold(
         backgroundColor: Colors.deepPurple,
         body: Row(children: [
-          Expanded(
-              child: Text('Layout Builder',
-                  style: const TextStyle(color: Colors.white, fontSize: 18)))
+          Expanded(child: LayoutBuilder(
+              builder: (BuildContext context, BoxConstraints constraints) {
+            return Column();
+          }))
         ]));
   }
 }
