@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:my_flutter_app/codelab_3.dart';
 import 'package:my_flutter_app/font.dart';
 import 'package:my_flutter_app/image.dart';
 import 'package:my_flutter_app/listview.dart';
@@ -207,7 +208,17 @@ class MyApp extends StatelessWidget {
                               const ResponsiveLayoutBuilder2Page()),
                         );
                       },
-                      child: const Text('Responsive Layout: Layout Builder Grid'))
+                      child: const Text('Responsive Layout: Layout Builder Grid')),
+                  ElevatedButton(
+                      onPressed: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) =>
+                              const Codelab3Page()),
+                        );
+                      },
+                      child: const Text('Codelab 3'))
                 ]),
           )),
         ));
