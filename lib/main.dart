@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:my_flutter_app/font.dart';
 import 'package:my_flutter_app/image.dart';
 import 'package:my_flutter_app/listview.dart';
+import 'package:my_flutter_app/resp_layoutbuilder2.dart';
 import 'button.dart';
 import 'codelab_2.dart';
 import 'input_widget.dart';
@@ -196,7 +197,17 @@ class MyApp extends StatelessWidget {
                               const ResponsiveLayoutBuilderPage()),
                         );
                       },
-                      child: const Text('Responsive Layout: Layout Builder'))
+                      child: const Text('Responsive Layout: Layout Builder')),
+                  ElevatedButton(
+                      onPressed: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) =>
+                              const ResponsiveLayoutBuilder2Page()),
+                        );
+                      },
+                      child: const Text('Responsive Layout: Layout Builder Grid'))
                 ]),
           )),
         ));
