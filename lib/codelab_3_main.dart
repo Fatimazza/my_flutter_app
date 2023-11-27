@@ -11,7 +11,10 @@ class Codelab3MainScreen extends StatelessWidget {
             child: Row(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: <Widget>[
-              Image.asset('images/wisata-farm-house.jpg')
+              Expanded(
+                flex: 1,
+                child: Image.asset('images/wisata-farm-house.jpg'),
+              )
             ])));
   }
 }
