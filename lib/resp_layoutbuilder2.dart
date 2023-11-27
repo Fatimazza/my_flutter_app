@@ -12,4 +12,14 @@ class ResponsiveLayoutBuilder2Page extends StatelessWidget {
           return Column();
         }));
   }
+
+  List<Widget> _generateContainers() {
+    return List<Widget>.generate(20, (index) {
+      return Container(
+        margin: const EdgeInsets.all(8),
+        color: Colors.blueGrey,
+        height: 200,
+      );
+    });
+  }
 }
