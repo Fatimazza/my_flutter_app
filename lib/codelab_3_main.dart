@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'codelab_2_detail.dart';
 
 class Codelab3MainScreen extends StatelessWidget {
   const Codelab3MainScreen({super.key});
@@ -8,7 +9,11 @@ class Codelab3MainScreen extends StatelessWidget {
     return Scaffold(
         appBar: AppBar(title: const Text('Wisata Bandung')),
         body: InkWell(
-            onTap: () {},
+            onTap: () {
+              Navigator.push(context, MaterialPageRoute(builder: (context) {
+                return Codelab2DetailPage();
+              }));
+            },
             child: Card(
                 child: Row(
                     crossAxisAlignment: CrossAxisAlignment.start,
