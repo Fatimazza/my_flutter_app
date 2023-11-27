@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'codelab_2_detail.dart';
+import 'package:my_flutter_app/codelab_3_main.dart';
 
 class Codelab3Page extends StatelessWidget {
   const Codelab3Page({super.key});
@@ -9,7 +9,7 @@ class Codelab3Page extends StatelessWidget {
     return MaterialApp(
       title: 'Wisata Bandung',
       theme: ThemeData(),
-      home: const Codelab2DetailPage(),
+      home: const Codelab3MainScreen(),
     );
   }
 }
