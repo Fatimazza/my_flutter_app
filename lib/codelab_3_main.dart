@@ -6,8 +6,12 @@ class Codelab3MainScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(
-        title: const Text('Wisata Bandung')
-    ));
+        appBar: AppBar(title: const Text('Wisata Bandung')),
+        body: Card(
+            child: Row(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: <Widget>[
+              Image.asset('images/wisata-farm-house.jpg')
+            ])));
   }
 }
