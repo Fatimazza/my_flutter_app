@@ -17,11 +17,13 @@ class Codelab3DetailScreen extends StatelessWidget {
             children: <Widget>[
               Stack(children: <Widget>[
                 Image.asset(place.imageAsset),
-                IconButton(
-                    icon: const Icon(Icons.arrow_back),
-                    onPressed: () {
-                      Navigator.pop(context);
-                    }),
+                SafeArea(
+                  child: IconButton(
+                      icon: const Icon(Icons.arrow_back),
+                      onPressed: () {
+                        Navigator.pop(context);
+                      }),
+                )
               ]),
               Container(
                   margin: const EdgeInsets.only(top: 16.0),
