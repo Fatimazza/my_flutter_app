@@ -108,3 +108,13 @@ class Codelab3DetailScreen extends StatelessWidget {
     );
   }
 }
+
+class FavoriteButton extends StatefulWidget {
+  const FavoriteButton({super.key});
+
+  @override
+  State<StatefulWidget> createState() {
+    // TODO: implement createState
+    throw UnimplementedError();
+  }
+}
