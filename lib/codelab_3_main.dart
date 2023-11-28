@@ -16,7 +16,7 @@ class Codelab3MainScreen extends StatelessWidget {
                   onTap: () {
                     Navigator.push(context,
                         MaterialPageRoute(builder: (context) {
-                      return Codelab3DetailPage(place: place);
+                      return Codelab3DetailScreen(place: place);
                     }));
                   },
                   child: Card(
