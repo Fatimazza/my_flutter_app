@@ -18,22 +18,24 @@ class Codelab3DetailScreen extends StatelessWidget {
               Stack(children: <Widget>[
                 Image.asset(place.imageAsset),
                 SafeArea(
-                  child: Padding(
-                    padding: const EdgeInsets.all(8.0),
-                    child: CircleAvatar(
-                      backgroundColor: Colors.white,
-                      child: IconButton(
-                        icon: const Icon(
-                          Icons.arrow_back,
-                          color: Colors.black,
-                        ),
-                        onPressed: () {
-                          Navigator.pop(context);
-                        }
-                      )
-                    )
-                  )
-                )
+                    child: Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            CircleAvatar(
+                                backgroundColor: Colors.white,
+                                child: IconButton(
+                                    icon: const Icon(
+                                      Icons.arrow_back,
+                                      color: Colors.black,
+                                    ),
+                                    onPressed: () {
+                                      Navigator.pop(context);
+                                    })),
+                            const FavoriteButton(),
+                          ],
+                        )))
               ]),
               Container(
                   margin: const EdgeInsets.only(top: 16.0),
@@ -119,7 +121,9 @@ class FavoriteButton extends StatefulWidget {
 class _FavoriteButtonState extends State<FavoriteButton> {
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
-    throw UnimplementedError();
+    return IconButton(
+      icon: Icon(Icons.favorite_border),
+      onPressed: () {},
+    );
   }
 }
