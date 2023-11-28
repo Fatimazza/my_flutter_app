@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'codelab_2_detail.dart';
+import 'codelab_3_detail.dart';
 
 class Codelab3MainScreen extends StatelessWidget {
   const Codelab3MainScreen({super.key});
@@ -11,7 +11,7 @@ class Codelab3MainScreen extends StatelessWidget {
         body: InkWell(
             onTap: () {
               Navigator.push(context, MaterialPageRoute(builder: (context) {
-                return Codelab2DetailPage();
+                return Codelab3DetailPage();
               }));
             },
             child: Card(
