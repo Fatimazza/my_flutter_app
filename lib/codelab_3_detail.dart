@@ -110,11 +110,16 @@ class Codelab3DetailScreen extends StatelessWidget {
 }
 
 class FavoriteButton extends StatefulWidget {
-  const FavoriteButton({super.key});
+  const FavoriteButton({Key? key}) : super(key: key);
 
   @override
-  State<StatefulWidget> createState() {
-    // TODO: implement createState
+  _FavoriteButtonState createState() => _FavoriteButtonState();
+}
+
+class _FavoriteButtonState extends State<FavoriteButton> {
+  @override
+  Widget build(BuildContext context) {
+    // TODO: implement build
     throw UnimplementedError();
   }
 }
