@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:my_flutter_app/model/tourism_place.dart';
 
 var informationTextStyle = const TextStyle(fontFamily: 'Oxygen');
 
 class Codelab3DetailPage extends StatelessWidget {
-  const Codelab3DetailPage({super.key});
+  final TourismPlace place;
+  const Codelab3DetailPage({Key? key, required this.place}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
