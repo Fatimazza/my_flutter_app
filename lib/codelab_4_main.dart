@@ -16,6 +16,16 @@ class Codelab4MainScreen extends StatelessWidget {
   }
 }
 
+class TourismPlaceGrid extends StatelessWidget {
+  const TourismPlaceGrid({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    // TODO: implement build
+    throw UnimplementedError();
+  }
+}
+
 class TourismPlaceList extends StatelessWidget {
   const TourismPlaceList({Key? key}) : super(key: key);
 
