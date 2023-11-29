@@ -9,57 +9,56 @@ class Codelab4MainScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-            title: Text('Wisata Bandung. Size: ${MediaQuery.of(context).size.width}'),
+          title: Text(
+              'Wisata Bandung. Size: ${MediaQuery.of(context).size.width}'),
         ),
-        body: ListView.builder(
-            itemBuilder: (context, index) {
-              final TourismPlace place = tourismPlaceList[index];
-              return InkWell(
-                  onTap: () {
-                    Navigator.push(context,
-                        MaterialPageRoute(builder: (context) {
-                      return Codelab4DetailScreen(place: place);
-                    }));
-                  },
-                  child: Card(
-                      child: Row(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: <Widget>[
-                        Expanded(
-                          flex: 1,
-                          child: Image.asset(place.imageAsset),
-                        ),
-                        Expanded(
-                            flex: 2,
-                            child: Padding(
-                              padding: const EdgeInsets.all(8.0),
-                              child: Column(
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                mainAxisSize: MainAxisSize.min,
-                                children: <Widget>[
-                                  Text(
-                                    place.name,
-                                    style: const TextStyle(fontSize: 16.0),
-                                  ),
-                                  const SizedBox(
-                                    height: 10,
-                                  ),
-                                  Text(place.location),
-                                ],
-                              ),
-                            ))
-                      ])));
-            },
-            itemCount: tourismPlaceList.length));
+        body: TourismPlaceList());
   }
 }
 
 class TourismPlaceList extends StatelessWidget {
-  const TourismPlaceList({super.key});
+  const TourismPlaceList({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
-    throw UnimplementedError();
+    return ListView.builder(
+        itemBuilder: (context, index) {
+          final TourismPlace place = tourismPlaceList[index];
+          return InkWell(
+              onTap: () {
+                Navigator.push(context, MaterialPageRoute(builder: (context) {
+                  return Codelab4DetailScreen(place: place);
+                }));
+              },
+              child: Card(
+                  child: Row(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: <Widget>[
+                    Expanded(
+                      flex: 1,
+                      child: Image.asset(place.imageAsset),
+                    ),
+                    Expanded(
+                        flex: 2,
+                        child: Padding(
+                          padding: const EdgeInsets.all(8.0),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            mainAxisSize: MainAxisSize.min,
+                            children: <Widget>[
+                              Text(
+                                place.name,
+                                style: const TextStyle(fontSize: 16.0),
+                              ),
+                              const SizedBox(
+                                height: 10,
+                              ),
+                              Text(place.location),
+                            ],
+                          ),
+                        ))
+                  ])));
+        },
+        itemCount: tourismPlaceList.length);
   }
 }
