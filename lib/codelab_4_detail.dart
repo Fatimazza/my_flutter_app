@@ -10,6 +10,17 @@ class Codelab4DetailScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    return DetailMobilePage(place: place);
+  }
+}
+
+class DetailMobilePage extends StatelessWidget {
+  final TourismPlace place;
+
+  const DetailMobilePage({super.key, required this.place});
+
+  @override
+  Widget build(BuildContext context) {
     return Scaffold(
         body: SingleChildScrollView(
             child: Column(
@@ -106,16 +117,6 @@ class Codelab4DetailScreen extends StatelessWidget {
                 }).toList(),
               ))
         ])));
-  }
-}
-
-class DetailMobilePage extends StatelessWidget {
-  const DetailMobilePage({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    // TODO: implement build
-    throw UnimplementedError();
   }
 }
 
