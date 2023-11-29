@@ -10,7 +10,15 @@ class Codelab4DetailScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return DetailMobilePage(place: place);
+    return LayoutBuilder(
+      builder: (BuildContext context, BoxConstraints constraints) {
+        if (constraints.maxWidth > 800) {
+          return DetailWebPage(place: place);
+        } else {
+          return DetailMobilePage(place: place);
+        }
+      },
+    );
   }
 }
 
