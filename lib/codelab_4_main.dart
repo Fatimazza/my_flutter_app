@@ -53,3 +53,13 @@ class Codelab4MainScreen extends StatelessWidget {
             itemCount: tourismPlaceList.length));
   }
 }
+
+class TourismPlaceList extends StatelessWidget {
+  const TourismPlaceList({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    // TODO: implement build
+    throw UnimplementedError();
+  }
+}
