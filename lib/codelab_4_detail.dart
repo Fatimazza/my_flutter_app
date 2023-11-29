@@ -140,6 +140,17 @@ class DetailWebPage extends StatelessWidget {
             child: Column(
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: <Widget>[
+          const Text(
+            'Wisata Bandung',
+            style: TextStyle(
+              fontFamily: 'Staatliches',
+              fontSize: 32,
+            ),
+          ),
+          const SizedBox(height: 32),
+          const Row(
+            children: [],
+          ),
           Stack(children: <Widget>[
             Image.asset(place.imageAsset),
             SafeArea(
