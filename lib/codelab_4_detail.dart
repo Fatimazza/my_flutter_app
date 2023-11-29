@@ -190,47 +190,48 @@ class DetailWebPage extends StatelessWidget {
                                         style: const TextStyle(
                                           fontSize: 30.0,
                                           fontFamily: 'Staatliches',
-                                        )))
+                                        ))),
+                                Row(
+                                  mainAxisAlignment:
+                                      MainAxisAlignment.spaceBetween,
+                                  children: [
+                                    Row(
+                                      children: <Widget>[
+                                        const Icon(Icons.calendar_today),
+                                        const SizedBox(width: 8.0),
+                                        Text(
+                                          place.openDays,
+                                          style: informationTextStyle,
+                                        ),
+                                      ],
+                                    ),
+                                    const FavoriteButton(),
+                                  ],
+                                ),
+                                Row(
+                                  children: <Widget>[
+                                    const Icon(Icons.access_time),
+                                    const SizedBox(width: 8.0),
+                                    Text(
+                                      place.openTime,
+                                      style: informationTextStyle,
+                                    ),
+                                  ],
+                                ),
+                                const SizedBox(height: 8.0),
+                                Row(
+                                  children: <Widget>[
+                                    const Icon(Icons.monetization_on),
+                                    const SizedBox(width: 8.0),
+                                    Text(
+                                      place.ticketPrice,
+                                      style: informationTextStyle,
+                                    ),
+                                  ],
+                                )
                               ]))))
             ],
           ),
-          Container(
-              margin: const EdgeInsets.symmetric(vertical: 16.0),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                children: <Widget>[
-                  Column(
-                    children: <Widget>[
-                      Icon(Icons.calendar_today),
-                      SizedBox(height: 8.0),
-                      Text(
-                        place.openDays,
-                        style: informationTextStyle,
-                      )
-                    ],
-                  ),
-                  Column(
-                    children: <Widget>[
-                      Icon(Icons.watch_later_outlined),
-                      SizedBox(height: 8.0),
-                      Text(
-                        place.openTime,
-                        style: informationTextStyle,
-                      )
-                    ],
-                  ),
-                  Column(
-                    children: <Widget>[
-                      Icon(Icons.monetization_on),
-                      SizedBox(height: 8.0),
-                      Text(
-                        place.ticketPrice,
-                        style: informationTextStyle,
-                      )
-                    ],
-                  )
-                ],
-              )),
           Container(
               padding: const EdgeInsets.all(16.0),
               child: Text(
