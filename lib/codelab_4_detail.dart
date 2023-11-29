@@ -153,34 +153,17 @@ class DetailWebPage extends StatelessWidget {
             children: [
               Expanded(
                   child: Column(
-                children: [],
+                children: [
+                  ClipRRect(
+                    child: Image.asset(place.imageAsset),
+                    borderRadius: BorderRadius.circular(10),
+                  )
+                ],
               )),
               const SizedBox(width: 32),
               Expanded(child: Card())
             ],
           ),
-          Stack(children: <Widget>[
-            Image.asset(place.imageAsset),
-            SafeArea(
-                child: Padding(
-                    padding: const EdgeInsets.all(8.0),
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        CircleAvatar(
-                            backgroundColor: Colors.white,
-                            child: IconButton(
-                                icon: const Icon(
-                                  Icons.arrow_back,
-                                  color: Colors.black,
-                                ),
-                                onPressed: () {
-                                  Navigator.pop(context);
-                                })),
-                        const FavoriteButton(),
-                      ],
-                    )))
-          ]),
           Container(
               margin: const EdgeInsets.only(top: 16.0),
               child: Text(
