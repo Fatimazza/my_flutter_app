@@ -8,7 +8,9 @@ class Codelab4MainScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(title: const Text('Wisata Bandung')),
+        appBar: AppBar(
+            title: Text('Wisata Bandung. Size: ${MediaQuery.of(context).size.width}'),
+        ),
         body: ListView.builder(
             itemBuilder: (context, index) {
               final TourismPlace place = tourismPlaceList[index];
