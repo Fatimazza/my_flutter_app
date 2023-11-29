@@ -109,6 +109,16 @@ class Codelab4DetailScreen extends StatelessWidget {
   }
 }
 
+class DetailMobilePage extends StatelessWidget {
+  const DetailMobilePage({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    // TODO: implement build
+    throw UnimplementedError();
+  }
+}
+
 class FavoriteButton extends StatefulWidget {
   const FavoriteButton({Key? key}) : super(key: key);
 
