@@ -228,17 +228,21 @@ class DetailWebPage extends StatelessWidget {
                                       style: informationTextStyle,
                                     ),
                                   ],
-                                )
+                                ),
+                                Container(
+                                    padding: const EdgeInsets.symmetric(
+                                        vertical: 16.0),
+                                    child: Text(
+                                      place.description,
+                                      textAlign: TextAlign.justify,
+                                      style: const TextStyle(
+                                        fontSize: 16.0,
+                                        fontFamily: 'Oxygen',
+                                      ),
+                                    ))
                               ]))))
             ],
-          ),
-          Container(
-              padding: const EdgeInsets.all(16.0),
-              child: Text(
-                place.description,
-                textAlign: TextAlign.center,
-                style: TextStyle(fontSize: 16.0, fontFamily: 'Oxygen'),
-              ))
+          )
         ])));
   }
 }
