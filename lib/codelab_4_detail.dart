@@ -120,6 +120,16 @@ class DetailMobilePage extends StatelessWidget {
   }
 }
 
+class DetailWebPage extends StatelessWidget {
+  const DetailWebPage({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    // TODO: implement build
+    throw UnimplementedError();
+  }
+}
+
 class FavoriteButton extends StatefulWidget {
   const FavoriteButton({Key? key}) : super(key: key);
 
