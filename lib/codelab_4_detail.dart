@@ -177,19 +177,23 @@ class DetailWebPage extends StatelessWidget {
                 ],
               )),
               const SizedBox(width: 32),
-              Expanded(child: Card())
+              Expanded(
+                  child: Card(
+                      child: Container(
+                          padding: const EdgeInsets.all(16),
+                          child: Column(
+                              mainAxisSize: MainAxisSize.max,
+                              children: <Widget>[
+                                Container(
+                                    child: Text(place.name,
+                                        textAlign: TextAlign.center,
+                                        style: const TextStyle(
+                                          fontSize: 30.0,
+                                          fontFamily: 'Staatliches',
+                                        )))
+                              ]))))
             ],
           ),
-          Container(
-              margin: const EdgeInsets.only(top: 16.0),
-              child: Text(
-                place.name,
-                textAlign: TextAlign.center,
-                style: TextStyle(
-                  fontSize: 30.0,
-                  fontFamily: 'Staatliches',
-                ),
-              )),
           Container(
               margin: const EdgeInsets.symmetric(vertical: 16.0),
               child: Row(
