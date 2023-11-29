@@ -148,20 +148,15 @@ class DetailWebPage extends StatelessWidget {
             ),
           ),
           const SizedBox(height: 32),
-          const Row(
+          Row(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Expanded(
-                child: Column(
-                  children: [],
-                )
-              ),
+                  child: Column(
+                children: [],
+              )),
               const SizedBox(width: 32),
-              Expanded(
-                child: Card(
-
-                )
-              )
+              Expanded(child: Card())
             ],
           ),
           Stack(children: <Widget>[
