@@ -17,12 +17,17 @@ class Codelab4MainScreen extends StatelessWidget {
 }
 
 class TourismPlaceGrid extends StatelessWidget {
-  const TourismPlaceGrid({super.key});
+  const TourismPlaceGrid({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
-    throw UnimplementedError();
+    return Padding(
+      padding: const EdgeInsets.all(24.0),
+      child: GridView.count(
+        crossAxisCount: 4,
+        children: [],
+      ),
+    );
   }
 }
 
